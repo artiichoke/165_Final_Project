@@ -1,7 +1,7 @@
 Sources: http://bl.ocks.org/mbostock/6452972
 
 ### vaccination_rates_by_state_reformatted.csv
-This file contains the average vaccination rates per US state of as provided by the Center of Disease and Control (http://www.cdc.gov/vaccines/imz-managers/coverage/imz-coverage.html). The data is from children (19 to 36 months) from January-December 2013.
+This file contains the average vaccination rates per US state of as provided by the Center of Disease and Control (http://www.cdc.gov/vaccines/imz-managers/coverage/imz-coverage.html). The data is from children (19 to 36 months) from January-December 2013. The data was reformatted to CSV format.
 
 ### us-states.json
 

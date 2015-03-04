@@ -1,3 +1,5 @@
+/* Map heavily modeled after Mike Bostock's code from Chapter 5 (05_choropleth.js) */
+
 // Key for map        
 var width = 960,
     height = 30,

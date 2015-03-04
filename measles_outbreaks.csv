@@ -1,49 +1,68 @@
-city,state,lat,lon,year,month,cases,impact
-Mobile,Alabama,30.61118,-90.00299,2014,May,1,Isolated
-Phoenix,Arizona,33.44838,-112.07404,2014,April,1,Isolated
-Contra Costa,California,37.85341,-121.9018,2014,March,4,Isolated
-Riverside,California,33.95335,-117.39616,2014,March,3,Isolated
-San Mateo,California,37.56299,-122.32553,2014,March,5,Isolated
-Alameda,California,37.60169,-121.71955,2014,April,4,Cluster
-Los Angeles,California,34.38718,-118.11227,2014,March,10,Isolated
-Santa Clara,California,37.35411,-121.95524,2014,March,1,Cluster
-Monterey,California,36.60024,-121.89468,2014,April,2,Cluster
-Orange,California,33.71747,-117.83114,2014,March,22,Isolated
-San Diego,California,32.71533,-117.15726,2014,March,6,Isolated
-Fresno,California,33.94159,-118.40853,2014,March,4,Cluster
-Fairfield,Connecticut,41.14084,-73.26126,2014,March,2,Isolated
-New Haven,Connecticut,41.32669,-72.80428,2014,April,1,Isolated
-N/L,Hawaii,19.89677,-155.58278,2014,February,1,Isolated
-N/L,Hawaii,22.0833,-159.5000,2014,October,12,Cluster
-N/L,Illinois,40.38851,-90.6773,2014,March,2,Isolated
-Kansas City,Kansas,38.84541,-94.85206,2014,June,27,Cluster
-N/L,Massachusetts,42.36009,-71.09416,2014,February,1,Isolated
-Framingham,Massachusetts,42.27929,-71.41616,2014,February,2,Isolated
-Middlesex,Massachusetts,42.46721,-71.28742,2014,March,2,Isolated
-N/L,Massachusetts,42.12204,-72.60092,2014,April,1,Isolated
-Northampton,Massachusetts,42.32509,-72.64120,2014,April,1,Isolated
-N/L,Massachusetts,42.35000,-71.08180,2014,May,1,Isolated
-N/L,Michigan,44.68798,-85.51384,2014,December,2,Isolated
-N/L,Minnesota,45.02089,-93.50946,2014,April,1,Isolated
-St. Paul,Minnesota,44.95370,-93.08996,2014,June,21,Cluster
-N/L,Missouri,39.09973,-94.57857,2014,January,11,Cluster
-Bayonne,New Jersey,40.66871,-74.11431,2014,March,1,Isolated
-Unknown,New Mexico,36.57060,-106.65755,2014,December,1,Isolated
-New York City,New York,40.84700,-73.93732,2014,April,26,Cluster
-New York City,New York,40.65000,-73.95000,2014,March,1,Isolated
-Albany,New York,42.72841,-73.69179,2014,February,1,Isolated
-Albany,New York,42.65258,-73.75623,2014,February,1,Isolated
-N/L,North Carolina,35.58486,-80.81007,2014,December,1,Isolated
-N/L,Ohio,40.45956,-82.30177,2014,March,382,Epidemic
-N/L,Oregon,43.80413,-120.5542,2014,January,5,Epidemic
-Pittsburgh,Pennsylvania,40.43918,-79.98966,2014,December,3,Cluster
-N/L,Rhode Island,41.82399,-71.41283,2014,March,1,Isolated
-N/L,Tennessee,36.20852,-86.60664,2014,May,5,Cluster
-N/L,Texas,32.78014,-96.80045,2014,February,1,Isolated
-N/L,Texas,-12.59641,-41.71841,2014,July,2,`Cluster
-N/L,Utah,39.32098,-111.09373,2014,June,1,Isolated
-N/L,Virginia,38.95061,-77.40770,2014,May,2,Cluster
-N/L,Washington,47.75107,-120.74014,2014,April,12,Isolated
-N/L,Washington,47.54803,-121.9836,2014,June,8,Cluster
-Seattle,Washington,47.44443,-122.30050,2014,September,1,Isolated
-N/L,Wisconsin,43.78444,-88.78787,2014,February,2,Isolated
+city,state,lat,lon,year,month,cases,reason,citation,trustworthy
+Mobile,Alabama,30.61118,-90.00299,2014,May,1,Isolated,,
+Phoenix,Arizona,33.44838,-112.07404,2014,April,1,Isolated,,
+Contra Costa,California,37.85341,-121.9018,2014,March,4,Isolated,,
+Riverside,California,33.95335,-117.39616,2014,March,3,Isolated,,
+San Mateo,California,37.56299,-122.32553,2014,March,5,Isolated,,
+Alameda,California,37.60169,-121.71955,2014,April,4,Cluster,,
+Los Angeles,California,34.38718,-118.11227,2014,March,10,Isolated,,
+Santa Clara,California,37.35411,-121.95524,2014,March,1,Cluster,,
+Monterey,California,36.60024,-121.89468,2014,April,2,Cluster,,
+Orange,California,33.71747,-117.83114,2014,March,22,Isolated,,
+San Diego,California,32.71533,-117.15726,2014,March,6,Isolated,,
+Fresno,California,33.94159,-118.40853,2014,March,4,Cluster,,
+Fairfield,Connecticut,41.14084,-73.26126,2014,March,2,Isolated,,
+New Haven,Connecticut,41.32669,-72.80428,2014,April,1,Isolated,,
+N/L,Hawaii,19.89677,-155.58278,2014,February,1,Isolated,,
+N/L,Hawaii,22.0833,-159.5,2014,October,12,Cluster,,
+N/L,Illinois,40.38851,-90.6773,2014,March,2,Isolated,,
+Kansas City,Kansas,38.84541,-94.85206,2014,June,27,Cluster,,
+N/L,Massachusetts,42.36009,-71.09416,2014,February,1,Isolated,,
+Framingham,Massachusetts,42.27929,-71.41616,2014,February,2,Isolated,,
+Middlesex,Massachusetts,42.46721,-71.28742,2014,March,2,Isolated,,
+N/L,Massachusetts,42.12204,-72.60092,2014,April,1,Isolated,,
+Northampton,Massachusetts,42.32509,-72.6412,2014,April,1,Isolated,,
+N/L,Massachusetts,42.35,-71.0818,2014,May,1,Isolated,,
+N/L,Michigan,44.68798,-85.51384,2014,December,2,Isolated,,
+N/L,Minnesota,45.02089,-93.50946,2014,April,1,Isolated,,
+St. Paul,Minnesota,44.9537,-93.08996,2014,June,21,Cluster,,
+N/L,Missouri,39.09973,-94.57857,2014,January,11,Cluster,,
+Bayonne,New Jersey,40.66871,-74.11431,2014,March,1,Isolated,,
+Unknown,New Mexico,36.5706,-106.65755,2014,December,1,Isolated,,
+New York City,New York,40.847,-73.93732,2014,April,26,Cluster,,
+New York City,New York,40.65,-73.95,2014,March,1,Isolated,,
+Albany,New York,42.72841,-73.69179,2014,February,1,Isolated,,
+Albany,New York,42.65258,-73.75623,2014,February,1,Isolated,,
+N/L,North Carolina,35.58486,-80.81007,2014,December,1,Isolated,,
+N/L,Ohio,40.45956,-82.30177,2014,March,382,Epidemic,,
+N/L,Oregon,43.80413,-120.5542,2014,January,5,Epidemic,,
+Pittsburgh,Pennsylvania,40.43918,-79.98966,2014,December,3,Cluster,,
+N/L,Rhode Island,41.82399,-71.41283,2014,March,1,Isolated,,
+N/L,Tennessee,36.20852,-86.60664,2014,May,5,Cluster,,
+N/L,Texas,32.78014,-96.80045,2014,February,1,Isolated,,
+N/L,Texas,-12.59641,-41.71841,2014,July,2,`Cluster,,
+N/L,Utah,39.32098,-111.09373,2014,June,1,Isolated,,
+N/L,Virginia,38.95061,-77.4077,2014,May,2,Cluster,,
+N/L,Washington,47.75107,-120.74014,2014,April,12,Isolated,,
+N/L,Washington,47.54803,-121.9836,2014,June,8,Cluster,,
+Seattle,Washington,47.44443,-122.3005,2014,September,1,Isolated,,
+N/L,Wisconsin,43.78444,-88.78787,2014,February,2,Isolated,,
+N/L,California,37.05134,-122.0733,2013,February,2,Cluster,,
+N/L,California,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,
+,,,,2013,,,,,

@@ -65,3 +65,50 @@ h4 {
     stroke-width: 1.25px;
     cursor: crosshair;
 }
+
+.dot {
+  opacity: .4;
+}
+
+#tooltip {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+#tooltip.hidden {
+    display: none;
+}
+
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+text {
+    stroke: black;
+    stroke-width: 0.5px;
+    fill: #000000;
+    font-size: .7em;
+    font-family:sans-serif;
+}
+
+.label {
+    fill: "black";
+}
+
+//Add Tooltip Style here 
+rect:hover {
+    fill: orange;
+}

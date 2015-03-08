@@ -150,7 +150,15 @@ var path = d3.geo.path()
     .projection(projection);
 
 //Define quantize scale to sort data values into buckets of color
-var color = d3.scale.quantize().range(['rgb(165,0,38)', 'rgb(215,48,39)', 'rgb(244,109,67)', 'rgb(253,174,97)', 'rgb(254,224,144)', 'rgb(224,243,248)', 'rgb(171,217,233)', 'rgb(116,173,209)', 'rgb(69,117,180)', 'rgb(49,54,149)']);
+var color = d3.scale.quantize().range(['rgb(255,247,251)','rgb(236,231,242)','rgb(208,209,230)','rgb(166,189,219)','rgb(116,169,207)','rgb(54,144,192)','rgb(5,112,176)','rgb(4,90,141)','rgb(2,56,88)']);
+
+//.range(['rgb(241,238,246)','rgb(189,201,225)','rgb(116,169,207)','rgb(43,140,190)','rgb(4,90,141)']);
+
+//.range(['rgb(255,247,251)','rgb(236,231,242)','rgb(208,209,230)','rgb(166,189,219)','rgb(116,169,207)','rgb(54,144,192)','rgb(5,112,176)','rgb(4,90,141)','rgb(2,56,88)']);
+
+//Original color scheme: .range(['rgb(165,0,38)', 'rgb(215,48,39)', 'rgb(244,109,67)', 'rgb(253,174,97)', 'rgb(254,224,144)', 'rgb(224,243,248)', 'rgb(171,217,233)', 'rgb(116,173,209)', 'rgb(69,117,180)', 'rgb(49,54,149)']);
+
+
 //Colors taken from colorbrewer.js, included in the D3 download
 
 //Create SVG element
@@ -166,10 +174,10 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
     //Set input domain for color scale
     color.domain([
             d3.min(data, function (d) {
-            return d.MMR_rates;
+            return (d.MMR_rates);
         }),
             d3.max(data, function (d) {
-            return d.MMR_rates;
+            return (d.MMR_rates);
         })
         ]);
 
@@ -217,6 +225,41 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
 
             });
 
+        //Load in cities data
+        d3.csv("us-cities.csv", function(data) {
+            svg.selectAll(".dot")
+               .data(data)
+               .enter()
+               .append("circle")
+               .attr("class", "dot")
+               .attr("cx", function(d) {
+                   return projection([d.lon, d.lat])[0];
+               })
+               .attr("cy", function(d) {
+                   return projection([d.lon, d.lat])[1];
+               })
+               .attr("r", function(d) {
+                    return Math.sqrt(parseInt(d.population) * 0.00008);
+               })
+               .style("fill", "red")
+              .on("mouseover", function(d) {
+                    //Update the tooltip position and value
+                    d3.select("#tooltip")
+                        .style("left", d3.event.pageX + "px")
+                        .style("top", d3.event.pageY + "px")						
+                        .select("#value")
+                        .html('<b>City:</b> ' + d.place + '<br/><b>Cases reported:</b> #'+ 
+                              '<br/><b>Cause of outbreak:</b> <value here>');
+
+                    //Show the tooltip
+                    d3.select("#tooltip").classed("hidden", false);
+               })
+               .on("mouseout", function() {
+                    //Hide the tooltip
+                    d3.select("#tooltip").classed("hidden", true);
+               });
+
+        });
     });
 
 });

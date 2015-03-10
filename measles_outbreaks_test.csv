@@ -1,0 +1,113 @@
+city,state,lat,lon,year,month,cases,reason,citation
+Mobile,Alabama,30.61118,-90.00299,2014,May,1,travel,http://www.myfoxal.com/story/25541894/health-officials-urge-vaccinations-after-measles-cases-triple
+Phoenix,Arizona,33.44838,-112.07404,2014,April,1,unvaccinated,http://ktar.com/22/1721718/Officials-warn-of-possible-measles-outbreak-in-Phoenix
+Contra Costa,California,37.85341,-121.9018,2014,March,4,travel,"http://www.latimes.com/local/lanow/la-me-ln-measles-rise-california-health-20140314,0,1321049.story#axzz2w3E61b1Y"
+Riverside,California,33.95335,-117.39616,2014,March,3,travel,http://www.latimes.com/local/la-me-measles-20140222-story.html#axzz2ucvjtrHY
+San Mateo,California,37.56299,-122.32553,2014,March,5,travel,"http://www.latimes.com/local/lanow/la-me-ln-measles-rise-california-health-20140314,0,1321049.story#axzz2w3E61b1Y"
+Alameda,California,37.60169,-121.71955,2014,April,4,unvaccinated,http://www.scpr.org/news/2014/04/18/43606/of-58-measles-cases-in-ca-19-were-intentionally-un/
+Los Angeles,California,34.38718,-118.11227,2014,March,10,travel,"http://www.latimes.com/local/la-me-measles-20140222,0,1197753.story#axzz2ucvjtrHY"
+Santa Clara,California,37.35411,-121.95524,2014,March,1,travel,"http://www.latimes.com/local/la-me-measles-20140222,0,1197753.story#axzz2ucvjtrHY"
+Monterey,California,36.60024,-121.89468,2014,April,2,unvaccinated,http://www.scpr.org/news/2014/04/18/43606/of-58-measles-cases-in-ca-19-were-intentionally-un/
+Orange,California,33.71747,-117.83114,2014,March,22,unvaccinated,http://www.examiner.com/article/measles-cases-continue-to-increase
+San Diego,California,32.71533,-117.15726,2014,March,6,unvaccinated,http://www.sandiego6.com/news/local/Measles-cases-on-the-rise-in-California-252586951.html
+Fresno,California,36.746842,-119.772587,2014,March,4,unvaccinated,http://www.hcplive.com/articles/CDC-Measles-Cases-at-Airport-Highlight-Ease-of-Transmission
+Fairfield,Connecticut,41.14084,-73.26126,2014,March,2,unvaccinated,http://www.wfsb.com/story/24936061/2-cases-of-measles-reported-in-ct
+New Haven,Connecticut,41.32669,-72.80428,2014,April,1,unvaccinated,http://connecticut.news12.com/measles-cases-reported-in-southwestern-ct-1.7858942
+N/L,Hawaii,19.89677,-155.58278,2014,February,1,travel,http://www.pacificnewscenter.com/index.php?option=com_content&view=article&id=42311
+N/L,Hawaii,22.0833,-159.5,2014,October,12,unvaccinated,http://www.kitv.com/news/New-measles-case-reported-on-Oahu/29737224
+N/L,Illinois,40.38851,-90.6773,2014,March,2,unvaccinated,http://tristatesradio.com/post/another-measles-case-mcdonough-county
+Kansas City,Kansas,38.84541,-94.85206,2014,June,27,unvaccinated,http://www.kansas.com/2014/06/24/3523983/wichita-area-health-officials.html
+N/L,Massachusetts,42.36009,-71.09416,2014,February,1,unclear,http://web.mit.edu/newsoffice/2014/experts-see-low-risk-to-community-from-mit-measles-case.html
+Framingham,Massachusetts,42.27929,-71.41616,2014,February,2,unclear,http://www.bostonherald.com/news_opinion/local_coverage/2014/02/dph_measles_traced_to_trader_joe_s_in_framingham
+Middlesex,Massachusetts,42.46721,-71.28742,2014,March,2,unvaccinated,http://boston.cbslocal.com/2014/03/05/2-new-measles-cases-confirmed-in-middlesex-county/
+N/L,Massachusetts,42.12204,-72.60092,2014,April,1,unvaccinated,http://wwlp.com/2014/04/05/confirmed-case-of-measles-at-baystate-medical-center/
+Northampton,Massachusetts,42.32509,-72.6412,2014,April,1,unvaccinated,http://www.masslive.com/news/index.ssf/2014/04/a_case_of_measles_has_been_rep.html
+N/L,Massachusetts,42.35,-71.0818,2014,May,1,unclear,http://www.myfoxboston.com/story/25520623/bphc-measles-case-reported-at-local-hospital#ixzz31oKcWc
+N/L,Michigan,44.68798,-85.51384,2014,December,2,travel,http://www.upnorthlive.com/news/story.aspx?id=1131471#.VIXFIDHF_zh
+N/L,Minnesota,45.02089,-93.50946,2014,April,1,travel,http://www.startribune.com/lifestyle/health/256790371.html
+St. Paul,Minnesota,44.9537,-93.08996,2014,June,21,travel and an undervaccinated community,http://www.doctorslounge.com/index.php/news/pb/47324
+N/L,Missouri,39.09973,-94.57857,2014,January,11,unclear,http://www.examiner.com/article/kansas-city-measles-outbreak-grows
+Bayonne,New Jersey,40.66871,-74.11431,2014,March,1,travel and an undervaccinated community,http://www.examiner.com/article/more-measles-cases-across-the-u-s
+Unknown,New Mexico,36.5706,-106.65755,2014,December,1,unvaccinated,http://www.santafenewmexican.com/news/local_news/measles-case-confirmed-in-santa-fe/article_77895d95-cb1a-572a-b381-6c4ce6018d3c.html
+New York City,New York,40.847,-73.93732,2014,April,26,unclear,http://www.nyc.gov/html/doh/downloads/pdf/press/measles-statement04-16-14.pdf
+New York City,New York,40.65,-73.95,2014,March,1,unclear,http://www.nbcnewyork.com/news/local/Measles-Outbreak-NYC-Cases-Kids-Adults-Vaccines-250840431.html
+Albany,New York,42.72841,-73.69179,2014,February,1,unvaccinated,http://www.timesunion.com/local/article/2nd-case-of-measles-in-Capital-Region-confirmed-5211925.php
+Albany,New York,42.65258,-73.75623,2014,February,1,unvaccinated,http://www.timesunion.com/local/article/2nd-case-of-measles-in-Capital-Region-confirmed-5211925.php
+N/L,North Carolina,35.58486,-80.81007,2014,December,1,travel and unvaccinated,http://abcnews.go.com/Health/north-carolina-measles-cases-worries-health-officials/story?id=27903231
+N/L,Ohio,40.45956,-82.30177,2014,March,382,travel and unvaccinated,http://wdtn.com/2015/01/19/ohio-dealing-with-large-number-of-measles-cases/
+N/L,Oregon,43.80413,-120.5542,2014,January,5,travel and unvaccinated,http://www.bizjournals.com/portland/blog/health-care-inc/2014/06/measles-cases-are-on-the-rise-but-theres-no-need.html
+Pittsburgh,Pennsylvania,40.43918,-79.98966,2014,December,3,N/A,http://www.abc57.com/seen-on/monday/Measles-outbreak-continues-to-grow-260686811.html
+N/L,Rhode Island,41.82399,-71.41283,2014,March,1,N/A,http://www.providencejournal.com/breaking-news/content/20140303-health-department-says-some-in-ri-might-have-been-exposed-to-measles.ece
+N/L,Tennessee,36.20852,-86.60664,2014,May,5,N/A,http://www.jacksonsun.com/article/20140514/NEWS01/305140014/5-cases-measles-reported-Tennessee-including-Madison-Gibson-Hardeman-counties
+N/L,Texas,32.78014,-96.80045,2014,February,1,unclear,http://www.dallasnews.com/news/metro/20140214-dallas-county-confirms-rare-case-of-adult-measles-not-linked-to-travel.ece?nclick_check=1
+N/L,Utah,39.32098,-111.09373,2014,June,1,N/A,http://www.sltrib.com/sltrib/news/58051531-78/measles-utah-case-state.html.csp
+N/L,Virginia,38.95061,-77.4077,2014,May,2,unclear,http://www.examiner.com/article/over-300-measles-cases-united-states-2014
+N/L,Washington,47.75107,-120.74014,2014,April,12,travel and unvaccinated,http://www.examiner.com/article/measles-cases-continue-to-increase
+N/L,Washington,47.54803,-121.9836,2014,June,8,travel and unvaccinated,http://www.bothell-reporter.com/news/264811961.html
+Seattle,Washington,47.44443,-122.3005,2014,September,1,travel,http://seatacblog.com/2014/09/13/confirmed-case-of-measles-reported-at-sea-tac-airport/
+N/L,Wisconsin,43.78444,-88.78787,2014,February,2,travel,http://whbl.com/news/articles/2014/feb/21/health-officials-stress-vaccinations-after-measles-cases-are-spotted-in-wisconsin/
+N/L,California,37.05134,-122.0733,2013,February,2,N/A,http://www.kionrightnow.com/story/20953695/santa-cruz-county-vaccinates-workers-after-measles-cases
+N/L,California,35.49373,-118.85968,2013,August,1,unclear,http://www.turnto23.com/news/local-news/public-health-confirms-measles-case-in-kern-county-081613
+N/L,New Jersey,40.56811,-74.59502,2013,March,1,unclear,http://bronx.news12.com/news/doh-issues-public-health-alert-in-possible-measles-case-at-somerset-medical-center-1.4781255?qr=1
+N/L,N/L,38.75408,-96.06445,2013,January,175,travel and undervaccinated communities,http://www.wxyz.com/news/cdc-to-address-recent-spike-in-measles-cases
+N/L,Colorado,39.52806,-104.86972,2013,January,2,N/A,http://www.kktv.com/news/elevenforhealth/headlines/Case-Of-Measles-Reported-In-Denver-Area-210421121.html#.UbHfxK3Weno.email
+N/L,Florida,27.664827,-81.515754,2013,January,5,travel and unvaccinated,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6336a1.htm?s_cid=mm6336a1_e
+N/L,Florida,28.71317,-81.20782,2013,February,2,travel,"http://www.orlandosentinel.com/news/local/breakingnews/os-measles-seminole-health-20130315,0,292076.story"
+N/L,Florida,26.1901,-80.36586,2013,March,1,N/A,http://www.wsvn.com/news/articles/local/21010221063363/1-so-fla-measles-case-reported/
+N/L,Florida,28.53834,-81.37924,2013,July,1,travel and unvaccinated,"http://www.orlandosentinel.com/health/os-measles-case-orlando-20130725,0,7967852.story"
+N/L,Indiana,39.1763,-86.53437,2013,August,1,N/A,http://www.journalgazette.net/article/20130329/BLOGS01/130329345
+N/L,Indiana,39.18514,-86.49965,2013,August,1,travel and unvaccinated,http://kokomoperspective.com/news/measles-confirmed-in-monroe-county/article_aff7e740-10f4-11e3-95a9-0019bb2963f4.html
+N/L,Michigan,44.26413,-85.63602,2013,January,2,unclear,http://www.wnem.com/story/23504322/measles-cases-in-michigan-nationally-concern-health-officials
+N/L,New Jersey,40.57427,-74.60988,2013,March,3,unclear,http://www.capemaycountyherald.com/article/government/court+house/90767-measles+exposures+related+new+suspect+case
+N/L,New Jersey,40.21705,-74.74294,2013,June,1,unclear,http://www.nj.com/politics/index.ssf/2013/06/nj_health_department_warns_of_measles_case_in_somerset_county.html
+New York City,New York,40.70645,-73.95362,2013,January,58,travel and undervaccinated communities,http://www.wsj.com/articles/SB10001424127887324251504578578054234429308
+N/L,North Carolina,36.0263,-79.10969,2013,January,23,N/A,http://dailysoutherner.com/local/x319988597/Measles-cases-have-state-health-officials-concerned
+N/L,North Carolina,35.76978,-78.9941,2013,April,3,travel and undervaccinated community,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6236a6.htm
+N/L,Oregon,44.84464,-122.59274,2013,January,6,unclear,http://www.bizjournals.com/portland/blog/health-care-inc/2014/06/measles-cases-are-on-the-rise-but-theres-no-need.html
+N/L,Texas,29.77518,-95.31025,2013,April,1,travel,http://www.chron.com/news/houston-texas/houston/article/County-s-1st-reported-case-of-measlessince-4432426.php
+N/L,Texas,32.7732,-97.35166,2013,January,15,N/A,http://www.kens5.com/story/local/2015/03/07/10518494/
+N/L,Texas,32.72541,-97.32085,2013,August,16,travel and undervaccinated community,http://www.goddiscussion.com/114130/measles-outbreak-at-copeland-church-reveals-that-majority-of-victims-were-never-vaccinated/
+N/L,Washington,47.56541,-122.00357,2013,January,2,unclear,http://patch.com/washington/sammamish/klahanie-measles-case-reported
+Seattle,Washington,47.60621,-122.33207,2013,July,2,unclear,http://www.kirotv.com/news/news/seattle-officals-warning-aboud-local-measles-cases/nYtXt/
+N/L,Washington,47.54803,-121.9836,2013,August,2,travel,http://www.valleyrecord.com/community/223334261.html
+N/L,Arizona,34.04893,-111.09373,2012,July,1,unclear,http://azdailysun.com/news/local/measles-case-surfaces-in-flagstaff/article_e1b77779-6dcf-50b6-9139-2ccea376fbf3.html
+N/L,Arkansas,35.20523,-91.82562,2012,August,2,unvaccinated,http://www.katv.com/story/19421520/measles-cases-confirmed
+N/L,California,34.17053,-118.53234,2012,April,2,travel and unvaccinated,http://www.dailynews.com/health/ci_20492252/providence-tarzana-medical-center-reports-2-cases-measles
+N/L,Delaware,39.29067,-75.63437,2012,January,1,unclear,http://abclocal.go.com/wpvi/story?section=news/health&id=8522260&rss=rss-wpvi-article-8522260
+N/L,Indiana,40.01062,-86.49965,2012,February,16,unclear,http://www.in.gov/activecalendar/EventList.aspx?view=EventDetails&eventidn=53452&information_id=107209&type=&syndicate=syndicate
+N/L,Kansas,37.97169,-100.87266,2012,January,6,N/A,http://www.kake.com/news/headlines/Health_Officials_Investigate_Measles_Outbreak_In_Finney_County_138063683.html
+N/L,Michigan,42.59219,-83.33619,2012,January,1,travel,http://www.clickondetroit.com/lifestyle/health/Measles-case-confirmed-in-Oakland-County/-/2300442/8488876/-/s9cmc3/-/
+N/L,New Mexico,34.52452,-105.87962,2012,January,1,N/A,http://www.kasa.com/dpps/news/news_health/measles-case-reported-in-northern-nm_4220132
+N/L,New York,41.86438,-74.32843,2012,September,1,unclear,http://7online.com/archive/8820413/
+N/L,Washington,46.1746472,-122.7746902,2012,November,1,unclear,http://tdn.com/news/local/measles-case-identified-at-woodland-primary-school/article_30b89f9a-2489-11e2-8370-0019bb2963f4.html
+N/L,U.S.,37.09024,-95.712891,2011,January,98,travel,http://www.healthnews.com/Categories/Alerts-Updates/US-Part-of-Growing-Spread-of-Global-Measles-Outbreak
+N/L,California,36.778261,-119.417932,2011,January,28,travel and undervaccinated community,"http://www.latimes.com/news/local/la-me-measles-20110922,0,6705186.story"
+N/L,Florida,27.664827,-81.015754,2011,April,1,unclear,"http://www.orlandosentinel.com/health/os-orlando-measles-20110513,0,585164.story"
+N/L,Guam,36.90194,-89.82361,2011,April,1,unclear,http://www.pacificnewscenter.com/index.php?option=com_content&view=article&id=13693:dphss-reports-confirmed-case-of-measles-in-2-year-old-boy&catid=45:guam-news&Itemid=156
+N/L,Indiana,40.55122,-85.0236,2011,June,5,travel and undervaccinated community,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6034a5.htm?s_cid=mm6034a5_e&source=govdelivery
+N/L,Indiana,40.551217,-85.602364,2011,July,14,travel and undervaccinated community,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6034a5.htm
+N/L,Iowa,41.878003,-93.097702,2011,May,1,unclear,http://blog.iowahospital.org/2011/05/24/todays-newsstand-may-24-2011/
+N/L,Kansas,38.845412,-94.852064,2011,May,2,N/A,http://www.kmbc.com/r/27745305/detail.html
+N/L,Maine,45.253783,-69.445469,2011,July,1,travel,http://www.maine.gov/tools/whatsnew/index.php?topic=Portal+News&id=272233&v=article-2008
+N/L,Maryland,39.04575,-76.64127,2011,August,2,unvaccinated,http://www.wjla.com/articles/2011/09/two-measles-cases-confirmed-in-montgomery-county-66025.html
+N/L,Massachusetts,42.407211,-71.3002437,2011,January,10,N/A,http://www.bostonherald.com/business/healthcare/view.bg?articleid=1336971&srvc=business&position=recent
+N/L,Massachusetts,42.407211,-71.382437,2011,May,2,N/A,http://www.bostonherald.com/news/regional/view/201105262_more_measles_cases_reported_in_massachusetts/srvc=home&position=recent
+N/L,Michigan,44.314844,-85.602364,2011,July,3,N/A,http://pediatrics.about.com/b/2011/04/07/measles-case-count.htm
+Minneapolis,Minnesota,44.979965,-93.263836,2011,March,21,N/A,http://kstp.com/article/stories/s2076092.shtml
+N/L,Minnesota,46.72955,-94.6859,2011,October,21,N/A,http://www.skinandallergynews.com/news/medical-dermatology/single-article/measles-called-eliminated-in-us-despite-outbreak/12550505d6.html
+N/L,New Jersey,40.058324,-74.405661,2011,January,4,travel,http://www.paramuspost.com/article.php/20110701163335826
+N/L,New Mexico,34.97273,-105.032364,2011,September,1,N/A,http://www.kob.com/article/stories/S2288730.shtml
+N/L,New York,40.714353,-73.995973,2011,March,2,unclear,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6020a7.htm
+N/L,New York,40.714353,-74.025973,2011,May,1,unclear,http://www.health.ny.gov/press/releases/2011/2011-05-17_confirms_measles.htm
+N/L,New York,40.714353,-74.15973,2011,May,1,N/A,http://www.officialwire.com/main.php?action=posted_news&rid=53181&catid=60
+N/L,New York,40.714353,-73.005973,2011,July,1,N/A,http://www.ny1.com/content/top_stories/140597/doh--higher-number-of-measles-cases-reported
+New York City,New York,40.65001,-73.95001,2011,October,6,travel and undervaccinated community,http://cityroom.blogs.nytimes.com/2011/10/21/health-department-reports-spike-in-measles-cases-in-brooklyn/
+N/L,Pennsylvania,40.371376,-77.240515,2011,February,5,unvaccinated,http://www.pennlive.com/perry-county-times/index.ssf/2011/02/health_department_acts_to_cont.html
+N/L,Pennsylvania,40.4108,-75.24791,2011,May,4,unclear,http://www.cidrap.umn.edu/cidrap/content/other/news/may0611measles.html
+N/L,Rhode Island,41.580095,-71.477429,2011,April,1,travel,http://abcnews.go.com/Health/w_ParentingResource/measles-outbreak-jersey-rhode-island-warn-people-watch/story?id=13493663
+N/L,Tennessee,35.517491,-86.580447,2011,March,2,N/A,http://www.wkrn.com/story/14665577/number-of-measles-cases-on-the-rise
+N/L,Texas,31.968599,-99.901813,2011,April,1,unclear,http://www.chron.com/disp/story.mpl/metropolitan/7503980.html
+N/L,Utah,39.32098,-111.09373,2011,March,4,N/A,http://www.skinandallergynews.com/news/medical-dermatology/single-article/measles-called-eliminated-in-us-despite-outbreak/12550505d6.html
+N/L,Utah,41.756,-111.76147,2011,July,6,N/A,"http://www.fox13now.com/news/local/kstu-utah-measles-6-cases-of-measles-confirmed-in-cache-county-20110711,0,2777089.story"
+N/L,Virginia,37.431573,-78.656894,2011,May,3,travel,http://www.newsplex.com/home/headlines/Confirmed_Cases_of_Measles_in_Charlottesville_122652194.html
+N/L,Wisconsin,43.78444,-88.78787,2011,September,3,N/A,http://www.nbc15.com/state/headlines/Measles_Cases_Traced_to_Unvaccinated_Tot_130397013.html

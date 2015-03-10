@@ -1,19 +1,35 @@
 /* Map heavily modeled after Mike Bostock's code from Chapter 5 (05_choropleth.js) */
 
-// Key for map        
-var width = 960,
+var width = 1050,
     height = 30,
     formatPercent = d3.format(".0%"),
     formatNumber = d3.format(".0f");
 
 var threshold = d3.scale.threshold()
-    .domain([0, .10, .20, .30, .40, .50, .60, .70, .80, .90, 1])
-    .range(['rgb(165,0,38)', 'rgb(165,0,40)', 'rgb(215,48,39)', 'rgb(244,109,67)', 'rgb(253,174,97)', 'rgb(254,224,144)', 'rgb(224,243,248)', 'rgb(171,217,233)', 'rgb(116,173,209)', 'rgb(69,117,180)', 'rgb(49,54,149)']);
+    .domain([.85, .86, .87, .88, .89, .90, .91, .92, .93, .94, .95, .96, .97, .98, .99, 1])
+
+.range(['rgb(149, 168, 254)',
+        'rgb(142, 158, 250)',
+        'rgb(136, 149, 246)',
+        'rgb(130, 140, 242)',
+        'rgb(123, 130, 238)',
+        'rgb(117, 121, 234)',
+        'rgb(111, 112, 230)',
+        'rgb(105, 102, 226)',
+        'rgb(98, 93, 223)',
+        'rgb(92, 84, 219)',
+        'rgb(86, 74, 215)',
+        'rgb(80, 65, 211)',
+        'rgb(73, 56, 207)',
+        'rgb(57, 46, 203)',
+        'rgb(51,37, 199)',
+        'rgb(55, 28, 196)']);
+
 
 // A position encoding for the key only.
 var x = d3.scale.linear()
-    .domain([0, 1])
-    .range([0, 240]);
+    .domain([.9, 1])
+    .range([0, 300]);
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -21,7 +37,7 @@ var xAxis = d3.svg.axis()
     .tickSize(13)
     .tickValues(threshold.domain())
     .tickFormat(function (d) {
-        return d === 5 ? formatPercent(d) : formatNumber(100 * d);
+        return d === .5 ? formatPercent(d) : formatNumber(100 * d);
     });
 
 var svg = d3.select("body").append("svg")
@@ -40,7 +56,7 @@ g.selectAll("rect")
         return d;
     }))
     .enter().append("rect")
-    .attr("height", 8)
+    .attr("height", 10)
     .attr("x", function (d) {
         return x(d[0]);
     })
@@ -54,7 +70,9 @@ g.selectAll("rect")
 g.call(xAxis).append("text")
     .attr("class", "caption")
     .attr("y", -6)
-    .text("Vaccinations Key");
+    .attr("x", -10)
+    .text("Population Vaccinated on Average(%)");
+
 
 
 // Slider Stuff
@@ -150,7 +168,23 @@ var path = d3.geo.path()
     .projection(projection);
 
 //Define quantize scale to sort data values into buckets of color
-var color = d3.scale.quantize().range(['rgb(255,247,251)','rgb(236,231,242)','rgb(208,209,230)','rgb(166,189,219)','rgb(116,169,207)','rgb(54,144,192)','rgb(5,112,176)','rgb(4,90,141)','rgb(2,56,88)']);
+var color = d3.scale.quantize().range([
+        'rgb(149, 168, 254)',
+        'rgb(142, 158, 250)',
+        'rgb(136, 149, 246)',
+        'rgb(130, 140, 242)',
+        'rgb(123, 130, 238)',
+        'rgb(117, 121, 234)',
+        'rgb(111, 112, 230)',
+        'rgb(105, 102, 226)',
+        'rgb(98, 93, 223)',
+        'rgb(92, 84, 219)',
+        'rgb(86, 74, 215)',
+        'rgb(80, 65, 211)',
+        'rgb(73, 56, 207)',
+        'rgb(57, 46, 203)',
+        'rgb(51,37, 199)',
+        'rgb(55, 28, 196)']);
 
 //.range(['rgb(241,238,246)','rgb(189,201,225)','rgb(116,169,207)','rgb(43,140,190)','rgb(4,90,141)']);
 
@@ -226,38 +260,38 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
             });
 
         //Load in cities data
-        d3.csv("us-cities.csv", function(data) {
+        d3.csv("us-cities.csv", function (data) {
             svg.selectAll(".dot")
-               .data(data)
-               .enter()
-               .append("circle")
-               .attr("class", "dot")
-               .attr("cx", function(d) {
-                   return projection([d.lon, d.lat])[0];
-               })
-               .attr("cy", function(d) {
-                   return projection([d.lon, d.lat])[1];
-               })
-               .attr("r", function(d) {
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("class", "dot")
+                .attr("cx", function (d) {
+                    return projection([d.lon, d.lat])[0];
+                })
+                .attr("cy", function (d) {
+                    return projection([d.lon, d.lat])[1];
+                })
+                .attr("r", function (d) {
                     return Math.sqrt(parseInt(d.population) * 0.00008);
-               })
-               .style("fill", "red")
-              .on("mouseover", function(d) {
+                })
+                .style("fill", "red")
+                .on("mouseover", function (d) {
                     //Update the tooltip position and value
                     d3.select("#tooltip")
                         .style("left", d3.event.pageX + "px")
-                        .style("top", d3.event.pageY + "px")						
+                        .style("top", d3.event.pageY + "px")
                         .select("#value")
-                        .html('<b>City:</b> ' + d.place + '<br/><b>Cases reported:</b> #'+ 
-                              '<br/><b>Cause of outbreak:</b> <value here>');
+                        .html('<b>City:</b> ' + d.place + '<br/><b>Cases reported:</b> #' +
+                            '<br/><b>Cause of outbreak:</b> <value here>');
 
                     //Show the tooltip
                     d3.select("#tooltip").classed("hidden", false);
-               })
-               .on("mouseout", function() {
+                })
+                .on("mouseout", function () {
                     //Hide the tooltip
                     d3.select("#tooltip").classed("hidden", true);
-               });
+                });
 
         });
     });

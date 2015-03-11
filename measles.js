@@ -16,7 +16,23 @@ var path = d3.geo.path()
     .projection(projection);
 
 //Define quantize scale to sort data values into buckets of color
-var color = d3.scale.quantize().range(['rgb(255,247,251)','rgb(236,231,242)','rgb(208,209,230)','rgb(166,189,219)','rgb(116,169,207)','rgb(54,144,192)','rgb(5,112,176)','rgb(4,90,141)','rgb(2,56,88)']);
+var color = d3.scale.quantize()
+.range(['rgb(230, 226, 208)',
+        'rgb(214, 214, 200)',
+        'rgb(199, 203, 192)',
+        'rgb(184, 192, 184)',
+        'rgb(169, 180, 176)',
+        'rgb(154, 169, 168)',
+        'rgb(138, 158, 160)',
+        'rgb(123, 146, 152)',
+        'rgb(108, 135, 144)',
+        'rgb(93, 124, 136)',
+        'rgb(78, 112, 128)',
+        'rgb(62, 101, 120)',
+        'rgb(47, 90, 112)',
+        'rgb(32, 78, 104)',
+        'rgb(17, 67, 96)',
+        'rgb(2, 56, 88)']);
 
 //Colors taken from colorbrewer.js, included in the D3 download
 

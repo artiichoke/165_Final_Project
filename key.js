@@ -1,18 +1,36 @@
-/* key.js */        
+/* key.js */
 
-var width = 960,
+var width = 1050,
     height = 30,
     formatPercent = d3.format(".0%"),
     formatNumber = d3.format(".0f");
 
 var threshold = d3.scale.threshold()
-    
- .domain([0, .10, .20, .30, .40, .50, .60, .70, .80, .90, 1])    .range(['rgb(255,247,251)','rgb(236,231,242)','rgb(208,209,230)','rgb(166,189,219)','rgb(116,169,207)','rgb(54,144,192)','rgb(5,112,176)','rgb(4,90,141)','rgb(2,56,88)']);
+    .domain([.85, .86, .87, .88, .89, .90, .91, .92, .93, .94, .95, .96, .97, .98, .99, 1])
+
+.range([
+        'rgb(17, 67, 96)',
+        'rgb(32, 78, 104)',
+        'rgb(47, 90, 112)',
+        'rgb(62, 101, 120)',
+        'rgb(78, 112, 128)',
+        'rgb(93, 124, 136)',
+        'rgb(108, 135, 144)',
+        'rgb(123, 146, 152)',
+        'rgb(138, 158, 160)',
+        'rgb(154, 169, 168)',
+        'rgb(169, 180, 176)',
+        'rgb(184, 192, 184)',
+        'rgb(199, 203, 192)',
+        'rgb(214, 214, 200)',
+        'rgb(230, 226, 208)',
+        ]);
+
 
 // A position encoding for the key only.
 var x = d3.scale.linear()
-    .domain([0, 1])
-    .range([0, 240]);
+    .domain([.9, 1])
+    .range([0, 300]);
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -55,4 +73,5 @@ g.selectAll("rect")
 g.call(xAxis).append("text")
     .attr("class", "caption")
     .attr("y", -6)
-    .text("Vaccinations Key");
+    .attr("x", -15)
+    .text("Population Vaccinated on Average(%)");

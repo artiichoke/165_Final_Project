@@ -1,3 +1,5 @@
+/* key.js: creates key element */
+
 // create scale
 var x = d3.scale.linear()
     .domain([.9, 1])

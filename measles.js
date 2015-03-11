@@ -1,3 +1,4 @@
+/* measles.js: creates map element, draws measles outbreaks onto map */
 /* Map heavily modeled after Mike Bostock's code from Chapter 5 (05_choropleth.js) */
 
 var width = 1050,
@@ -28,7 +29,7 @@ var threshold = d3.scale.threshold()
 // MAP      
 // Width and height
 var w = 1000;
-var h = 500;
+var h = 525;
 // Define map projection
 var projection = d3.geo.albersUsa()
     .translate([w / 2, h / 2]);
@@ -58,13 +59,13 @@ var color = d3.scale.quantize().range([
         'rgb(55, 28, 196)']);
 
 
-//Create SVG element
+// Create SVG element
 var svg = d3.select("body")
     .append("svg")
     .attr("width", w)
     .attr("height", h);
 
-//Load in vaccination rates data
+// Load in vaccination rates data
 d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
 
 
@@ -76,7 +77,7 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
             d3.max(data, function (d) {
             return (d.MMR_rates);
         })
-        ]);
+    ]);
 
     //Load in GeoJSON data
     d3.json("us-states.json", function (json) {
@@ -155,7 +156,6 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
                     //Hide the tooltip
                     d3.select("#tooltip").classed("hidden", true);
                 });
-
         });
     });
 

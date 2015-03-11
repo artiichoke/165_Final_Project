@@ -1,4 +1,5 @@
-// Slider Stuff
+/* slider.js: create slider element */
+
 // set up margins
 var margin = {
         top: -100,

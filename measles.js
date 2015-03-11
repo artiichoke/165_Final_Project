@@ -7,7 +7,7 @@ var width = 1050,
 
 var threshold = d3.scale.threshold()
     .domain([.85, .86, .87, .88, .89, .90, .91, .92, .93, .94, .95, .96, .97, .98, .99, 1])
-
+	
 .range(['rgb(149, 168, 254)',
         'rgb(142, 158, 250)',
         'rgb(136, 149, 246)',
@@ -25,149 +25,20 @@ var threshold = d3.scale.threshold()
         'rgb(51,37, 199)',
         'rgb(55, 28, 196)']);
 
-
-// A position encoding for the key only.
-var x = d3.scale.linear()
-    .domain([.9, 1])
-    .range([0, 300]);
-
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom")
-    .tickSize(13)
-    .tickValues(threshold.domain())
-    .tickFormat(function (d) {
-        return d === .5 ? formatPercent(d) : formatNumber(100 * d);
-    });
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-var g = svg.append("g")
-    .attr("class", "key")
-    .attr("transform", "translate(" + (width - 240) / 2 + "," + height / 2 + ")");
-
-g.selectAll("rect")
-    .data(threshold.range().map(function (color) {
-        var d = threshold.invertExtent(color);
-        if (d[0] == null) d[0] = x.domain()[0];
-        if (d[1] == null) d[1] = x.domain()[1];
-        return d;
-    }))
-    .enter().append("rect")
-    .attr("height", 10)
-    .attr("x", function (d) {
-        return x(d[0]);
-    })
-    .attr("width", function (d) {
-        return x(d[1]) - x(d[0]);
-    })
-    .style("fill", function (d) {
-        return threshold(d[0]);
-    });
-
-g.call(xAxis).append("text")
-    .attr("class", "caption")
-    .attr("y", -6)
-    .attr("x", -10)
-    .text("Population Vaccinated on Average(%)");
-
-
-
-// Slider Stuff
-// set up margins
-var margin = {
-        top: -100,
-        right: 50,
-        bottom: 0,
-        left: 50
-    },
-    width = 960 - margin.left - margin.right,
-    height = 200 - margin.bottom - margin.top;
-
-// init x domain and range
-var x = d3.scale.linear()
-    .domain([2004, 2014])
-    .range([0, width])
-    .clamp(true); // forces values to be within range
-
-// init brush
-var brush = d3.svg.brush()
-    .x(x)
-    .extent([0, 0])
-    .on("brush", brushed);
-
-// init svg
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height / 2 + ")")
-    .call(d3.svg.axis()
-        .scale(x)
-        .orient("bottom")
-        .tickFormat(function (d) {
-            return d + "";
-        })
-        .tickSize(0)
-        .tickPadding(12))
-    .select(".domain")
-    .select(function () {
-        return this.parentNode.appendChild(this.cloneNode(true));
-    })
-    .attr("class", "halo");
-
-var slider = svg.append("g")
-    .attr("class", "slider")
-    .call(brush);
-
-slider.selectAll(".extent,.resize")
-    .remove();
-
-slider.select(".background")
-    .attr("height", height);
-
-var handle = slider.append("circle")
-    .attr("class", "handle")
-    .attr("transform", "translate(0," + height / 2 + ")")
-    .attr("r", 9);
-
-slider
-    .call(brush.event)
-    .transition() // gratuitous intro!
-    .duration(750)
-    .call(brush.extent([70, 70]))
-    .call(brush.event);
-
-function brushed() {
-        var value = brush.extent()[0];
-
-        if (d3.event.sourceEvent) { // not a programmatic event
-            value = x.invert(d3.mouse(this)[0]);
-            brush.extent([value, value]);
-        }
-
-        handle.attr("cx", x(value));
-    }
-    //Map Stuff        
-    //Width and height
+// MAP      
+// Width and height
 var w = 1000;
-var h = 465;
-//Define map projection
+var h = 500;
+// Define map projection
 var projection = d3.geo.albersUsa()
     .translate([w / 2, h / 2]);
 //.scale([500]);
 
-//Define path generator
+// Define path generator
 var path = d3.geo.path()
     .projection(projection);
 
-//Define quantize scale to sort data values into buckets of color
+// Define quantize scale to sort data values into buckets of color
 var color = d3.scale.quantize().range([
         'rgb(149, 168, 254)',
         'rgb(142, 158, 250)',
@@ -186,14 +57,6 @@ var color = d3.scale.quantize().range([
         'rgb(51,37, 199)',
         'rgb(55, 28, 196)']);
 
-//.range(['rgb(241,238,246)','rgb(189,201,225)','rgb(116,169,207)','rgb(43,140,190)','rgb(4,90,141)']);
-
-//.range(['rgb(255,247,251)','rgb(236,231,242)','rgb(208,209,230)','rgb(166,189,219)','rgb(116,169,207)','rgb(54,144,192)','rgb(5,112,176)','rgb(4,90,141)','rgb(2,56,88)']);
-
-//Original color scheme: .range(['rgb(165,0,38)', 'rgb(215,48,39)', 'rgb(244,109,67)', 'rgb(253,174,97)', 'rgb(254,224,144)', 'rgb(224,243,248)', 'rgb(171,217,233)', 'rgb(116,173,209)', 'rgb(69,117,180)', 'rgb(49,54,149)']);
-
-
-//Colors taken from colorbrewer.js, included in the D3 download
 
 //Create SVG element
 var svg = d3.select("body")
@@ -259,7 +122,7 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
 
             });
 
-        //Load in cities data
+        // Load in cities data
         d3.csv("us-cities.csv", function (data) {
             svg.selectAll(".dot")
                 .data(data)

@@ -1,5 +1,5 @@
 /* measles.js */
-/* Map heavily modeled after Mike Bostock's code from Chapter 5 (05_choropleth.js) */
+/* Map heavily modeled after Mike Bostock's code from Chapter 12 (05_choropleth.js) */
 
 // CREATE MAP
 
@@ -15,6 +15,7 @@ var projection = d3.geo.albersUsa()
 var path = d3.geo.path()
     .projection(projection);
 
+//Colors taken from colorbrewer.js, included in the D3 download
 //Define quantize scale to sort data values into buckets of color
 var color = d3.scale.quantize()
 .range(['rgb(230, 226, 208)',
@@ -33,8 +34,6 @@ var color = d3.scale.quantize()
         'rgb(32, 78, 104)',
         'rgb(17, 67, 96)',
         'rgb(2, 56, 88)']);
-
-//Colors taken from colorbrewer.js, included in the D3 download
 
 //Create SVG element
 var svg = d3.select("body")
@@ -59,6 +58,7 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
         })
         ]);
 
+    //Code copied from Mike Bostock's Chater 12 choropleth.js
     //Load in GeoJSON data
     d3.json("us-states.json", function (json) {
         //Merge the ag. data and GeoJSON
@@ -100,8 +100,24 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
                     //If value is undefined…
                     return "#ccc";
                 }
+        })
+            //code modified from Mike Bostock's Chaper 12 example scripts
+            .on("mouseover", function(d) {
+                    //Update the tooltip position and value
+                    d3.select("#tooltip")
+                        .style("left", d3.event.pageX + "px")
+                        .style("top", d3.event.pageY + "px")						
+                        .select("#value")
+                        .html('<b>State:</b> ' + data.State + '<br/><b>Vaccination average:</b> #');
 
-            });
+                    //Show the tooltip
+                    d3.select("#tooltip").classed("hidden", false);
+               })
+               .on("mouseout", function() {
+                    //Hide the tooltip
+                    d3.select("#tooltip").classed("hidden", true);
+               });            
+        
 
         //Load in cities data
         d3.csv("measles_outbreaks_test.csv", function(data) {
@@ -137,6 +153,8 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
                     return Math.sqrt(parseInt(d.cases*5 ));
                })
                .style("fill", "red")
+            
+            //Code modified from Mike Bostock's Chapter 12 example scripts
               .on("mouseover", function(d) {
                     //Update the tooltip position and value
                     d3.select("#tooltip")

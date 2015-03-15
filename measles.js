@@ -103,12 +103,15 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
         })
             //code modified from Mike Bostock's Chaper 12 example scripts
             .on("mouseover", function(d) {
+            
+                var mmr_average = 100 - Math.round((d.properties.value) * 100) / 100;
+                var state = d.properties.name;
                     //Update the tooltip position and value
                     d3.select("#tooltip")
                         .style("left", d3.event.pageX + "px")
                         .style("top", d3.event.pageY + "px")						
                         .select("#value")
-                        .html('<b>State:</b> ' + data.State + '<br/><b>Vaccination average:</b> #');
+                        .html('<b>State:</b> ' + state + '<br/><b>Vaccination average:</b> ' + mmr_average + '%');
 
                     //Show the tooltip
                     d3.select("#tooltip").classed("hidden", false);
@@ -150,7 +153,7 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
                     // return projection(+d.lat);
                })
                .attr("r", function(d) {
-                    return Math.sqrt(parseInt(d.cases*5 ));
+                    return Math.sqrt(parseInt(d.cases*4 ));
                })
                .style("fill", "red")
             

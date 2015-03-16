@@ -46,8 +46,8 @@ display(current_year);
 
 d3.select("#slider").on('change', function(d) {       
        var incrementation = parseInt(this.value);
-       if(incrementation > step){ current_year -= 1;}
-       else { current_year += 1; }
+       current_year = (2013 - incrementation);
+       d3.select("#year").text(""+current_year);
        svg.selectAll("path").remove();       
        return display(current_year);
 });
@@ -131,8 +131,7 @@ function display(Year) {
                     //Hide the tooltip
                     d3.select("#tooltip").classed("hidden", true);
                });            
-        
-
+                
         //Load in cities data
         d3.csv("measles_outbreaks_test.csv", function(data) {
               data.forEach(function(d) {
@@ -142,10 +141,9 @@ function display(Year) {
                d.lon = +d.lon;
                d.year = +d.year;
                d.month = d.month.toString();
-               d.cases = +d.cases
+               d.cases = +d.cases;
                d.reason = d.reason.toString();
-               d.citation = d.citation.toString();
-                  
+               d.citation = d.citation.toString();                  
                   //city,state,lat,lon,year,month,cases,reason,citation
             });
             

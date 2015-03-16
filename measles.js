@@ -15,6 +15,10 @@ var projection = d3.geo.albersUsa()
 var path = d3.geo.path()
     .projection(projection);
 
+var step = 0;
+var current_year = 2013;
+var filename = ("data" + current_year + ".csv").toString();
+
 //Colors taken from colorbrewer.js, included in the D3 download
 //Define quantize scale to sort data values into buckets of color
 var color = d3.scale.quantize()
@@ -38,9 +42,19 @@ var svg = d3.select("body")
     .attr("width", w)
     .attr("height", h);
 
-//Load in vaccination rates data
-d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
+display(current_year);
 
+d3.select("#slider").on('change', function(d) {       
+       var incrementation = parseInt(this.value);
+       if(incrementation > step){ current_year -= 1;}
+       else { current_year += 1; }
+       svg.selectAll("path").remove();       
+       return display(current_year);
+});
+
+//Load in vaccination rates data
+function display(Year) {    
+    d3.csv("data" + Year + ".csv", function (data) {
     data.forEach(function(d) {
                d.MMR_rates = 100 - (+d.MMR_rates);                                    
             });
@@ -176,3 +190,4 @@ d3.csv("vaccination_rates_by_state_reformatted.csv", function (data) {
     });
 
 });
+}

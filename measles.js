@@ -18,22 +18,19 @@ var path = d3.geo.path()
 //Colors taken from colorbrewer.js, included in the D3 download
 //Define quantize scale to sort data values into buckets of color
 var color = d3.scale.quantize()
-.range(['rgb(230, 226, 208)',
-        'rgb(214, 214, 200)',
-        'rgb(199, 203, 192)',
-        'rgb(184, 192, 184)',
-        'rgb(169, 180, 176)',
-        'rgb(154, 169, 168)',
-        'rgb(138, 158, 160)',
+.range([
+        'rgb(155, 178, 184)',
         'rgb(123, 146, 152)',
-        'rgb(108, 135, 144)',
-        'rgb(93, 124, 136)',
         'rgb(78, 112, 128)',
-        'rgb(62, 101, 120)',
-        'rgb(47, 90, 112)',
-        'rgb(32, 78, 104)',
-        'rgb(17, 67, 96)',
-        'rgb(2, 56, 88)']);
+        'rgb(73, 99, 125)',
+        'rgb(68, 86, 123)',
+        'rgb(64, 73, 121)',
+        'rgb(59, 60, 119)',
+        'rgb(54, 48, 117)',
+        'rgb(50, 35, 115)',
+        'rgb(30, 15, 85)',
+        'rgb(11, 5, 31)'
+       ]);
 
 //Create SVG element
 var svg = d3.select("body")

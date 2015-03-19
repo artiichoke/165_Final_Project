@@ -16,7 +16,7 @@ var path = d3.geo.path()
     .projection(projection);
 
 var step = 0;
-var current_year = 2013;
+var current_year = 2008;
 var filename = ("data" + current_year + ".csv").toString();
 
 //Colors taken from colorbrewer.js, included in the D3 download
@@ -46,9 +46,10 @@ display(current_year);
 
 d3.select("#slider").on('change', function(d) {       
        var incrementation = parseInt(this.value);
-       current_year = (2013 - incrementation);
+       current_year = (2008 + incrementation);
        d3.select("#year").text(""+current_year);
-       svg.selectAll("path").remove();       
+       svg.selectAll("path").remove();
+       svg.selectAll(".dot").remove();
        return display(current_year);
 });
 
@@ -133,7 +134,7 @@ function display(Year) {
                });            
                 
         //Load in cities data
-        d3.csv("measles_outbreaks_test.csv", function(data) {
+        d3.csv("measles_outbreaks_" + Year + ".csv", function(data) {
               data.forEach(function(d) {
                d.city = d.city.toString();
                d.state = d.state.toString();
@@ -162,7 +163,7 @@ function display(Year) {
                     // return projection(+d.lat);
                })
                .attr("r", function(d) {
-                    return Math.sqrt(parseInt(d.cases*4 ));
+                    return Math.sqrt(parseInt(Math.log(d.cases+1)*50));
                })
                .style("fill", "red")
             

@@ -29,10 +29,18 @@ svg {
 
 h1 {
     text-align: left;
-    padding-left: 200px;
+    padding-left: 120px;
     padding-bottom: 0px;
-    font-size: 35px;
+    font-size: 45px;
     font-family: monospace;
+    color: #0B0B3B;
+}
+
+h2 {
+    color: darkgray;
+    font-family: monospace;
+    padding-left: 220px;
+    font-size: 15px;
 }
 
 h4 {

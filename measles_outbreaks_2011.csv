@@ -2,8 +2,6 @@ city,state,lat,lon,year,month,cases,reason,citation
 Coffeyville,U.S.,37.09024,-95.712891,2011,January,98,travel,http://www.healthnews.com/Categories/Alerts-Updates/US-Part-of-Growing-Spread-of-Global-Measles-Outbreak
 Fresno,California,36.778261,-119.417932,2011,January,28,travel and unvaccinated community,"http://www.latimes.com/news/local/la-me-measles-20110922,0,6705186.story"
 Orlando,Florida,27.664827,-81.015754,2011,April,1,unclear,"http://www.orlandosentinel.com/health/os-orlando-measles-20110513,0,585164.story"
-Mangilao,Guam,13.444304,144.793731,2011,April,1,unclear,http://www.pacificnewscenter.com/index.php?option=com_content&view=article&id=13693:dphss-reports-confirmed-case-of-measles-in-2-year-old-boy&catid=45:guam-news&Itemid=156
-Geneva,Indiana,40.55122,-85.0236,2011,June,5,travel and unvaccinated community,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6034a5.htm?s_cid=mm6034a5_e&source=govdelivery
 Marion,Indiana,40.551217,-85.602364,2011,July,14,travel and unvaccinated community,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6034a5.htm
 Des Moines,Iowa,41.878003,-93.097702,2011,May,1,unclear,http://blog.iowahospital.org/2011/05/24/todays-newsstand-may-24-2011/
 Olathe,Kansas,38.845412,-94.852064,2011,May,2,N/A,http://www.kmbc.com/r/27745305/detail.html
@@ -30,3 +28,4 @@ Price,Utah,39.32098,-111.09373,2011,March,4,N/A,http://www.skinandallergynews.co
 Logan,Utah,41.756,-111.76147,2011,July,6,N/A,"http://www.fox13now.com/news/local/kstu-utah-measles-6-cases-of-measles-confirmed-in-cache-county-20110711,0,2777089.story"
 Buckingham,Virginia,37.431573,-78.656894,2011,May,3,travel,http://www.newsplex.com/home/headlines/Confirmed_Cases_of_Measles_in_Charlottesville_122652194.html
 Fond du Lac,Wisconsin,43.78444,-88.78787,2011,September,3,N/A,http://www.nbc15.com/state/headlines/Measles_Cases_Traced_to_Unvaccinated_Tot_130397013.html
+Geneva,Indiana,40.55122,-85.0236,2011,June,5,travelandunvaccinated,"http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6034a5.htm?s_cid=mm6034a5_e&source=govdelivery"

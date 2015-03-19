@@ -136,6 +136,7 @@ function display(Year) {
                 
         //Load in cities data
         d3.csv("measles_outbreaks_" + Year + ".csv", function(data) {
+            console.log(Year);
               data.forEach(function(d) {
                d.city = d.city.toString();
                d.state = d.state.toString();

@@ -15,9 +15,9 @@ var projection = d3.geo.albersUsa()
 var path = d3.geo.path()
     .projection(projection);
 
-var step = 0;
-var current_year = 2008;
-var filename = ("data" + current_year + ".csv").toString();
+//var step = 0;
+//var current_year = 2008;
+//var filename = ("data" + current_year + ".csv").toString();
 
 //Colors taken from colorbrewer.js, included in the D3 download
 //Define quantize scale to sort data values into buckets of color
@@ -42,7 +42,7 @@ var svg = d3.select("body")
     .attr("width", w)
     .attr("height", h);
 
-display(current_year);
+/* display(current_year);
 
 d3.select("#slider").on('change', function(d) {       
        var incrementation = parseInt(this.value);
@@ -52,6 +52,7 @@ d3.select("#slider").on('change', function(d) {
        svg.selectAll(".dot").remove();
        return display(current_year);
 });
+*/
 
 //Load in vaccination rates data
 function display(Year) {    
@@ -167,9 +168,9 @@ function display(Year) {
                })
                .style("fill", "red")
             
-            //Code modified from Mike Bostock's Chapter 12 example scripts
+            // Code modified from Mike Bostock's Chapter 12 example scripts
               .on("mouseover", function(d) {
-                    //Update the tooltip position and value
+                    // Update the tooltip position and value
                     d3.select("#tooltip")
                         .style("left", d3.event.pageX + "px")
                         .style("top", d3.event.pageY + "px")						

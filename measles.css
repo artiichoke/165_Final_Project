@@ -115,3 +115,12 @@ text {
 rect:hover {
     fill: orange;
 }
+
+ #slider {
+    padding-bottom: 5px;
+    width: 550px;
+}
+
+div{
+    padding-left: 150px;
+}

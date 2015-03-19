@@ -2,7 +2,7 @@ city,state,lat,lon,year,month,cases,reason,citation
 Ben Lomond,California,37.05134,-122.0733,2013,February,2,N/A,http://www.kionrightnow.com/story/20953695/santa-cruz-county-vaccinates-workers-after-measles-cases
 Bakersfield,California,35.49373,-118.85968,2013,August,1,unclear,http://www.turnto23.com/news/local-news/public-health-confirms-measles-case-in-kern-county-081613
 Somerville,New Jersey,40.56811,-74.59502,2013,March,1,unclear,http://bronx.news12.com/news/doh-issues-public-health-alert-in-possible-measles-case-at-somerset-medical-center-1.4781255?qr=1
-N/L,N/L,38.75408,-96.06445,2013,January,175,travel and undervaccinated communities,http://www.wxyz.com/news/cdc-to-address-recent-spike-in-measles-cases
+N/L,N/L,38.75408,-96.06445,2013,January,175,travel and unvaccinated communities,http://www.wxyz.com/news/cdc-to-address-recent-spike-in-measles-cases
 Centennial,Colorado,39.52806,-104.86972,2013,January,2,N/A,http://www.kktv.com/news/elevenforhealth/headlines/Case-Of-Measles-Reported-In-Denver-Area-210421121.html#.UbHfxK3Weno.email
 Frostproof,Florida,27.664827,-81.515754,2013,January,5,travel and unvaccinated,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6336a1.htm?s_cid=mm6336a1_e
 Sanford,Florida,28.71317,-81.20782,2013,February,2,travel,"http://www.orlandosentinel.com/news/local/breakingnews/os-measles-seminole-health-20130315,0,292076.story"
@@ -13,13 +13,13 @@ Bloomington,Indiana,39.18514,-86.49965,2013,August,1,travel and unvaccinated,htt
 Boon,Michigan,44.26413,-85.63602,2013,January,2,unclear,http://www.wnem.com/story/23504322/measles-cases-in-michigan-nationally-concern-health-officials
 Somerville,New Jersey,40.57427,-74.60988,2013,March,3,unclear,http://www.capemaycountyherald.com/article/government/court+house/90767-measles+exposures+related+new+suspect+case
 Trenton,New Jersey,40.21705,-74.74294,2013,June,1,unclear,http://www.nj.com/politics/index.ssf/2013/06/nj_health_department_warns_of_measles_case_in_somerset_county.html
-New York City,New York,40.70645,-73.95362,2013,January,58,travel and undervaccinated communities,http://www.wsj.com/articles/SB10001424127887324251504578578054234429308
+New York City,New York,40.70645,-73.95362,2013,January,58,travel and unvaccinated communities,http://www.wsj.com/articles/SB10001424127887324251504578578054234429308
 Hillsborough,North Carolina,36.0263,-79.10969,2013,January,23,N/A,http://dailysoutherner.com/local/x319988597/Measles-cases-have-state-health-officials-concerned
-Raleigh,North Carolina,35.76978,-78.9941,2013,April,3,travel and undervaccinated community,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6236a6.htm
+Raleigh,North Carolina,35.76978,-78.9941,2013,April,3,travel and unvaccinated community,http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6236a6.htm
 Silver Falls,Oregon,44.84464,-122.59274,2013,January,6,unclear,http://www.bizjournals.com/portland/blog/health-care-inc/2014/06/measles-cases-are-on-the-rise-but-theres-no-need.html
 Houston,Texas,29.77518,-95.31025,2013,April,1,travel,http://www.chron.com/news/houston-texas/houston/article/County-s-1st-reported-case-of-measlessince-4432426.php
 Fort Worth,Texas,32.7732,-97.35166,2013,January,15,N/A,http://www.kens5.com/story/local/2015/03/07/10518494/
-Fort Worth,Texas,32.72541,-97.32085,2013,August,16,travel and undervaccinated community,http://www.goddiscussion.com/114130/measles-outbreak-at-copeland-church-reveals-that-majority-of-victims-were-never-vaccinated/
+Fort Worth,Texas,32.72541,-97.32085,2013,August,16,travel and unvaccinated community,http://www.goddiscussion.com/114130/measles-outbreak-at-copeland-church-reveals-that-majority-of-victims-were-never-vaccinated/
 Klahanie,Washington,47.56541,-122.00357,2013,January,2,unclear,http://patch.com/washington/sammamish/klahanie-measles-case-reported
 Seattle,Washington,47.60621,-122.33207,2013,July,2,unclear,http://www.kirotv.com/news/news/seattle-officals-warning-aboud-local-measles-cases/nYtXt/
 Issaquah,Washington,47.54803,-121.9836,2013,August,2,travel,http://www.valleyrecord.com/community/223334261.html

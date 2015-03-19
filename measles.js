@@ -53,7 +53,7 @@ d3.select("#slider").on('change', function(d) {
        return display(current_year);
 });
 */
-
+//Some of the code to bind outbreak and vaccination data to the slider was inspired by this d3 visualization: http://bl.ocks.org/carsonfarmer/11478345
 //Load in vaccination rates data
 function display(Year) {    
     d3.csv("data" + Year + ".csv", function (data) {
